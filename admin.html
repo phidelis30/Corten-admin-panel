@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/images/logo.png">
+    <link rel="stylesheet" href="./assets/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <script src="./assets/js/index.js"></script>
+    <title>Corten + | Admin</title>
+</head>
+<body>
+    <div class="container">
+        <!-- =========================== ASIDE(sidebar) ==================================== -->
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./assets/images/Corten_Plus_Logo_3_160x160@2x.png" alt="">
+                </div>
+                <div class="close" id="close-btn">
+                    <i class="bi bi-x"></i>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="./admin.html" class="active">
+                    <i class="bi bi-grid"></i>
+                    <h3>Tableau de bord</h3>
+                </a>
+                <a href="./customer.html">
+                    <i class="bi bi-person"></i>
+                    <h3>Clients</h3>
+                </a>
+                <a href="./orders.html">
+                    <i class="bi bi-receipt"></i>
+                    <h3>Commandes</h3>
+                </a>
+                <a href="#">
+                    <i class="bi bi-graph-up"></i>
+                    <h3>Analytiques</h3>
+                </a>
+                <a href="#">
+                    <i class="bi bi-envelope"></i>
+                    <h3>Messages</h3>
+                    <span class="message-count">10</span>
+                </a>
+                <a href="./product.html">
+                    <i class="bi bi-bag-check"></i>
+                    <h3>Produits</h3>
+                </a>
+                <a href="#">
+                    <i class="bi bi-exclamation-octagon"></i>
+                    <h3>Rapports</h3>
+                </a>
+                <a href="#">
+                    <i class="bi bi-gear"></i>
+                    <h3>Paramètres</h3>
+                </a>
+                <a href="#">
+                    <i class="bi bi-plus"></i>
+                    <h3>Ajouter Produit</h3>
+                </a>
+                <a href="./login.html">
+                    <i class="bi bi-arrow-bar-right"></i>
+                    <h3>Déconnexion</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- ==================================== END OF ASIDE  AND START OF MAIN =============================== -->
+        <main>
+            <h1>Tableau de bord</h1>
+            <div class="date">
+                <input type="date">
+            </div>
+
+            <div class="insights">
+                <div class="sales">
+                    <i class="bi bi-bar-chart-fill"></i>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total ventes</h3>
+                            <h1>45.24€</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="36" r="30" />
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Dernier 24 Heures</small>
+                </div>
+                <!-- ======================= END OF SALES ======================== -->
+                <div class="expenses">
+                    <i class="bi bi-clipboard-data"></i>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total depenses</h3>
+                            <h1>31.04€</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="36" r="30" />
+                            </svg>
+                            <div class="number">
+                                <p>45%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Dernier 24 Heures</small>
+                </div>
+                <!-- ======================= END OF EXPENSES ======================== -->
+                <div class="incomes">
+                    <i class="bi bi-currency-euro"></i>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total revenu</h3>
+                            <h1>25.45€</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="36" r="30" />
+                            </svg>
+                            <div class="number">
+                                <p>27%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Dernier 24 Heures</small>
+                </div>
+                <!-- ======================= END OF INCOMES ======================== -->
+            </div>
+            <!-- ================================ END OF INSIDE AND START OF RECENT ORDER  ========================= -->
+            <div class="table">
+                <h2>Commande récent</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nom Produits</th>
+                            <th>Quanité</th>
+                            <th>Payment</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Descaler</td>
+                            <td>67</td>
+                            <td>Phidelis</td>
+                            <td class="warning">En attente</td>
+                            <td>Détails</td>
+                        </tr>
+                        <tr>
+                            <td>Degreaser</td>
+                            <td>14</td>
+                            <td>Naddi</td>
+                            <td class="warning">En attente</td>
+                            <td>Détails</td>
+                        </tr>
+                        <tr>
+                            <td>Degreaser</td>
+                            <td>57</td>
+                            <td>Béatrice</td>
+                            <td class="warning">En attente</td>
+                            <td>Détails</td>
+                        </tr>
+                        <tr>
+                            <td>Descaler</td>
+                            <td>67</td>
+                            <td>Phidelis</td>
+                            <td class="success">Livré</td>
+                            <td>Détails</td>
+                        </tr>
+                        <tr>
+                            <td>Descaler</td>
+                            <td>50</td>
+                            <td>Suzette</td>
+                            <td class="success">Livré</td>
+                            <td>Détails</td>
+                        </tr>
+                        <tr>
+                            <td>Rust acceleratoR</td>
+                            <td>42</td>
+                            <td>Phidelis</td>
+                            <td class="warning">En attente</td>
+                            <td>Détails</td>
+                        </tr>
+                        <tr>
+                            <td>Descaler</td>
+                            <td>47</td>
+                            <td>Tonece</td>
+                            <td class="danger">Diminué</td>
+                            <td>Détails</td>
+                        </tr>
+                        <tr>
+                            <td>Rust acceleratoR</td>
+                            <td>4</td>
+                            <td>Phidelis</td>
+                            <td class="warning">En attente</td>
+                            <td>Détails</td>
+                        </tr>
+                        <tr>
+                            <td>Rust acceleratoR</td>
+                            <td>56</td>
+                            <td>Phidelis</td>
+                            <td class="warning">En attente</td>
+                            <td>Détails</td>
+                        </tr>
+                        <tr>
+                            <td>Degreaser</td>
+                            <td>89</td>
+                            <td>Phidelis</td>
+                            <td class="danger">Diminué</td>
+                            <td>Détails</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="./orders.html">Voir tous</a>
+            </div>
+        </main>
+        <!-- =============================== END OF MAIN AND START RIGHT ================================================ -->
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="profile">
+                    <div class="info">
+                        <p>Bonjour! Phidelis</p>
+                        <small class="text-muted">
+                            Admin
+                        </small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="./assets/images/profiles/user.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- ============================ END OF TOP AND START RECETENT UPDATES ====================================== -->
+            <div class="recent-updates">
+                <h2>Mettre à jour récent</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./assets/images/profiles/celine.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Suzette: </b>Merci bcp Corten plus!</p>
+                            <small class="text-muted">Il y a 2 minutes</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./assets/images/profiles/dinise.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Béatrice: </b>Merci bcp Corten plus!</p>
+                            <small class="text-muted">Il y a 30 minutes</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./assets/images/profiles/user_1.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Naddi: </b>Merci bcp Corten plus!</p>
+                            <small class="text-muted">Il y a 1 heure</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./assets/images/profiles/michael J.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Tonece: </b>Merci bcp Corten plus!</p>
+                            <small class="text-muted">Il y a 2 heures</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- =====================END OF RECENT UPDATES AND START SALES ANALYTICS ============================= -->
+            <div class="sales-analytics">
+                <h2>Analytiques des ventes</h2>
+                <div class="item online">
+                    <div class="icon">
+                        <i class="bi bi-cart-fill"></i>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Commandes en ligne</h3>
+                            <small class="text-muted">Dernier 24 Heures </small>
+                        </div>
+                        <h5 class="primary">+39</h5>
+                        <h3>3849</h3>
+                    </div>
+                </div>
+                <div class="item offline">
+                    <div class="icon">
+                        <i class="bi bi-bag-fill"></i>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Commandes en deconnecté</h3>
+                            <small class="text-muted">Dernier 24 Heures </small>
+                        </div>
+                        <h5 class="success">-12</h5>
+                        <h3>1000</h3>
+                    </div>
+                </div>
+                <div class="item customers">
+                    <div class="icon">
+                        <i class="bi bi-person-fill"></i>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Nouveau clients</h3>
+                            <small class="text-muted">Dernier 24 Heures </small>
+                        </div>
+                        <h5 class="warning">+59</h5>
+                        <h3>5742</h3>
+                    </div>
+                </div>
+                <div class="item add-product">
+                    <div>
+                        <i class="bi bi-plus"></i>
+                        <h3>Ajouter Produit</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

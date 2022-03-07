@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/images/logo.png">
+    <link rel="stylesheet" href="./assets/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <script src="./assets/js/index.js"></script>
+    <title>Corten + | Customers</title>
+</head>
+<body>
+    <div class="container">
+        <!-- =========================== ASIDE(sidebar) ==================================== -->
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./assets/images/Corten_Plus_Logo_3_160x160@2x.png" alt="">
+                </div>
+                <div class="close" id="close-btn">
+                    <i class="bi bi-x"></i>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="./admin.html">
+                    <i class="bi bi-grid"></i>
+                    <h3>Tableau de bord</h3>
+                </a>
+                <a href="./customer.html" class="active">
+                    <i class="bi bi-person"></i>
+                    <h3>Clients</h3>
+                </a>
+                <a href="./orders.html">
+                    <i class="bi bi-receipt"></i>
+                    <h3>Commandes</h3>
+                </a>
+                <a href="#">
+                    <i class="bi bi-graph-up"></i>
+                    <h3>Analytiques</h3>
+                </a>
+                <a href="#">
+                    <i class="bi bi-envelope"></i>
+                    <h3>Messages</h3>
+                    <span class="message-count">10</span>
+                </a>
+                <a href="./product.html">
+                    <i class="bi bi-bag-check"></i>
+                    <h3>Produits</h3>
+                </a>
+                <a href="#">
+                    <i class="bi bi-exclamation-octagon"></i>
+                    <h3>Rapports</h3>
+                </a>
+                <a href="#">
+                    <i class="bi bi-gear"></i>
+                    <h3>Paramètres</h3>
+                </a>
+                <a href="#">
+                    <i class="bi bi-plus"></i>
+                    <h3>Ajouter Produit</h3>
+                </a>
+                <a href="./login.html">
+                    <i class="bi bi-arrow-bar-right"></i>
+                    <h3>Déconnexion</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- ==================================== END OF ASIDE  AND START OF MAIN =============================== -->
+        <main>
+            <h1>Clients</h1>
+            <div class="date">
+                <input type="date">
+            </div>
+            <div class="search">
+                <input type="search" placeholder="Chercher client">
+                <i class="bi bi-search"></i>
+            </div>
+            <!-- ================================ START OF TABLE  ========================= -->
+            <div class="table">
+                <h2>Listes clients</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nom Client</th>
+                            <th>Adresse</th>
+                            <th>Email</th>
+                            <th>Tel</th>
+                            <th>Rôle</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="profile-photo">
+                                    <img src="./assets/images/profiles/celine.jpg" alt="">
+                                </div>
+                                <small class="text-muted">Suzette</small>
+                            </td>
+                            <td>France</td>
+                            <td>suzette07@hotmail.fr</td>
+                            <td>+23 56 678 90</td>
+                            <td>Client</td>
+                            <td class="success">Active</td>
+                            <td>Détails</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="profile-photo">
+                                    <img src="./assets/images/profiles/dinise.jpg" alt="">
+                                </div>
+                                <small class="text-muted">Béatrice</small>
+                            </td>
+                            <td>Belgique</td>
+                            <td>beatrice@gmail.com</td>
+                            <td>+01 36 677 00</td>
+                            <td>Client</td>
+                            <td class="warning">Pré-active</td>
+                            <td>Détails</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="profile-photo">
+                                    <img src="./assets/images/profiles/michael J.jpg" alt="">
+                                </div>
+                                <small class="text-muted">Tonece</small>
+                            </td>
+                            <td>USA</td>
+                            <td>tnc890@hotmail.com</td>
+                            <td>+03 73 108 41</td>
+                            <td>Client</td>
+                            <td class="warning">Désactive</td>
+                            <td>Détails</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="profile-photo">
+                                    <img src="./assets/images/profiles/user.jpg" alt="">
+                                </div>
+                                <small class="text-muted">Phidelis</small>
+                            </td>
+                            <td>Madagascar</td>
+                            <td>admin@gmail.com</td>
+                            <td>+261 32 568 01</td>
+                            <td>Admin</td>
+                            <td class="success">Atcive</td>
+                            <td>Détails</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="profile-photo">
+                                    <img src="./assets/images/profiles/user_1.jpg" alt="">
+                                </div>
+                                <small class="text-muted">Naddi</small>
+                            </td>
+                            <td>Allemagne</td>
+                            <td>02naddi@hotmail.fr</td>
+                            <td>+11 16 370 17</td>
+                            <td>Client</td>
+                            <td class="success">Active</td>
+                            <td>Détails</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <!-- =============================== END OF MAIN AND START RIGHT ================================================ -->
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="profile">
+                    <div class="info">
+                        <p>Bonjour! Phidelis</p>
+                        <small class="text-muted">
+                            Admin
+                        </small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="./assets/images/profiles/user.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- ============================ END OF TOP AND START RECETENT UPDATES ====================================== -->
+            <div class="recent-updates">
+                <h2>Mettre à jour récent</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./assets/images/profiles/celine.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Suzette: </b>Merci bcp Corten plus!</p>
+                            <small class="text-muted">Il y a 2 minutes</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./assets/images/profiles/dinise.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Béatrice: </b>Merci bcp Corten plus!</p>
+                            <small class="text-muted">Il y a 30 minutes</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./assets/images/profiles/user_1.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Naddi: </b>Merci bcp Corten plus!</p>
+                            <small class="text-muted">Il y a 1 heure</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./assets/images/profiles/michael J.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Tonece: </b>Merci bcp Corten plus!</p>
+                            <small class="text-muted">Il y a 2 heures</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- =====================END OF RECENT UPDATES AND START SALES ANALYTICS ============================= -->
+            <div class="sales-analytics">
+                <h2>Analytiques des ventes</h2>
+                <div class="item online">
+                    <div class="icon">
+                        <i class="bi bi-cart-fill"></i>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Commandes en ligne</h3>
+                            <small class="text-muted">Dernier 24 Heures </small>
+                        </div>
+                        <h5 class="primary">+39</h5>
+                        <h3>3849</h3>
+                    </div>
+                </div>
+                <div class="item offline">
+                    <div class="icon">
+                        <i class="bi bi-bag-fill"></i>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Commandes en deconnecté</h3>
+                            <small class="text-muted">Dernier 24 Heures </small>
+                        </div>
+                        <h5 class="success">-12</h5>
+                        <h3>1000</h3>
+                    </div>
+                </div>
+                <div class="item customers">
+                    <div class="icon">
+                        <i class="bi bi-person-fill"></i>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Nouveau clients</h3>
+                            <small class="text-muted">Dernier 24 Heures </small>
+                        </div>
+                        <h5 class="warning">+59</h5>
+                        <h3>5742</h3>
+                    </div>
+                </div>
+                <div class="item add-product">
+                    <div>
+                        <i class="bi bi-plus"></i>
+                        <h3>Ajouter Produit</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
